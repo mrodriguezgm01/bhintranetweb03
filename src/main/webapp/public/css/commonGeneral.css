@@ -1,0 +1,432 @@
+/*
+* CSS comunes para la APP.
+*/
+
+body {
+	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
+	font-size: 12px;
+}
+
+.container {
+	margin-top: 17px;
+}
+
+.container.generalContainer {
+	width: 100%;
+}
+
+.container.generalContainer.generalAnulacionContainer {
+	width: 52%;
+}
+
+.container.generalContainer.generalObservacionContainer{
+	width: 82%;
+}
+
+.container.generalContainer.generalConsultaContainer {
+	width: 82%;
+}
+
+.container.generalContainer.generalArchivoContainer {
+	width: 88%;
+}
+
+.container.generalCrearNuevaRutaContainer {
+	width: 700px;
+}
+ 
+.container.generalModalContainer {
+	width: 80%;
+}
+
+.generalModalContainerAuxiliar {
+	/*Esta clase se usa en JS, y debe tener el mismo valor que .container.generalModalContainer*/
+	width: 80%;
+}
+
+.container.generalModalConsultarComisionContainer {
+	width: 90%;
+}
+
+.generalModalConsultarComisionContainerAuxiliar {
+	/*Esta clase se usa en JS, y debe tener el mismo valor que .container.generalModalContainer*/
+	width: 90%;
+}
+
+.container.generalModalConsultarReembolsoContainer {
+	width: 90%;
+}
+
+.generalModalConsultarReembolsoContainerAuxiliar {
+	/*Esta clase se usa en JS, y debe tener el mismo valor que .container.generalModalContainer*/
+	width: 90%;
+}
+
+.container.generalMensajeConfirmacionContainer {
+	width: 350px;
+}
+
+.generalMensajeConfirmacionContainer .panel {
+	border: none;
+}
+
+.generalMensajeConfirmacionContainer.verticalAlignmentHelper {
+	display: table;
+	height: 100%;
+}
+
+.generalMensajeConfirmacionContainer .verticalAlignCenter {
+	/* To center vertically */
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.generalMensajeConfirmacionContainer .panel-heading.divErrorGeneralMensajeConfirmacionContainer {
+	font-weight: bold;
+	text-align: justify;
+}
+
+.generalContainer .txtTextRightClase {
+	text-align: right;
+}
+
+.generalContainer .divInfoGeneralClase {
+	float: right;
+	color: #ff8121;
+	text-align: right;
+}
+
+.generalContainer .divInfoGeneralClase label {
+	display: block;
+	width: 400px;
+}
+
+.generalContainer .divInfoSmallGeneralClase {
+	float: right;
+	color: #ff8121;
+	text-align: right;
+}
+
+.generalContainer .divInfoSmallGeneralClase label {
+	display: block;
+	width: 100%;
+}
+
+.generalContainer .divIeComponentGeneralClass {
+	display: none;
+}
+
+.generalContainer .divError {
+	color: #990000;
+	display: none;
+	text-align: justify;
+}
+
+.paddingLeftRightZeroClase {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.paddingLeftZeroClase {
+	padding-left: 0px;
+}
+
+.paddingRightZeroClase {
+	padding-right: 0px;
+}
+
+.paddingLeftRightZeroWithSpaceClase {
+	padding-left: 0px;
+	padding-right: 1px;
+}
+
+.paddingTop10 {
+	padding-top: 10px;
+}
+
+.marginBottom10 {
+	margin-bottom: 10px;
+}
+
+.upperCaseTextClase {
+	text-transform: uppercase;
+}
+
+.divLoadingClase {
+	display: none;
+}
+
+.divLoadingCompleteRowClase {
+	display: none;
+	margin-top: -18px;
+}
+
+.divLoadingClase img, .divLoadingCompleteRowClase img {
+	vertical-align: middle;
+}
+
+/* CSS - Panel */
+
+.panel-heading {
+	height: 33px;
+}
+
+.container.generalMensajeConfirmacionContainer .panel-heading {
+	height: auto;
+}
+
+/* CSS - Tables */
+
+.ui-jqgrid .ui-pg-input {
+	height: 15px;
+	font-size:.8em;
+	margin: 0;
+}
+
+.ui-jqgrid .ui-jqgrid-htable th {
+	height: 33px;
+}
+
+.ui-jqgrid .ui-jqgrid-pager {
+	height: 28px;
+	font-size: 12px;
+}
+
+.ui-pg-table {
+	height: 100%;
+}
+
+.ui-pager-control, .ui-pager-control tr {
+	height: 100%;
+}
+
+.ui-jqgrid-sortable {
+	color: #777;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.ui-widget-content .ui-state-default {
+	background: #f6f6f6;
+}
+
+.ui-widget-content .ui-state-hover {
+	background: #bce8f1;
+}
+
+.ui-state-default.ui-th-column.ui-th-ltr.ui-state-hover {
+	border-right-color: #ccc;
+}
+
+.ui-widget-content.jqgrow.ui-row-ltr.ui-state-hover {
+	border-top-color: #ccc;
+	border-right-color: #ccc;
+	border-bottom-color: #ccc;
+	border-left-color: #ccc;
+}
+
+.ui-widget-content.jqgrow.ui-row-ltr.ui-state-highlight {
+	background-color: #ffe45c;
+}
+
+.ui-widget-content.jqgrow.ui-row-ltr.ui-state-highlight td {
+	background-color: #ffe45c;
+	border-color: #ccc;
+}
+
+.ui-jqgrid-title {
+	font-size: 12px;
+	color: #fff;
+}
+
+.ui-widget-header {
+	height: 33px;
+	background-color: #337ab7;
+	background-image: none;
+	border-bottom-color: #ccc;
+}
+
+.ui-jqgrid .ui-jqgrid-titlebar {
+	padding-top: 7px;
+}
+
+.jqGridGeneral th.ui-th-column div{
+	white-space: normal !important;
+	height: auto !important;
+	padding: 2px;
+}
+
+.jqGridGeneralPagerClass table tr td:first-child {
+	color: #990000;
+	font-weight: bold;
+}
+
+.generalContainer .colorFontRedTableClass {
+	color: #990000;
+}
+
+.generalContainer .colorFontOrangeTableClass {
+	color: #ff8121;
+}
+
+.generalContainer .colorFontPinkTableClass {
+	color: #e8207a;
+}
+
+.generalContainer .colorFontDarkGreenTableClass {
+	color: #117811;
+}
+
+a.jqGridGeneralLinkClass, a.jqGridGeneralLinkClass:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	color: inherit;
+}
+
+a.jqGridGeneralTooltipClass {
+	color: inherit;
+}
+
+/* CSS - Tables - Boton de despliegue*/
+
+.ui-jqgrid-titlebar-close.ui-corner-all.HeaderButton {
+	display: none;
+}
+
+/* CSS - Date Time Picker */
+
+.datepicker {
+	font-size: 12px;
+}
+
+.timepicker-picker .timepicker-hour, .timepicker-picker .separator, .timepicker-picker .timepicker-minute, .timepicker-picker .btn {
+	font-size: 12px;
+}
+
+.dateTimeHourGeneralClass .bootstrap-datetimepicker-widget table td, .dateTimeHourGeneralClass .bootstrap-datetimepicker-widget table td span {
+    height: 30px;
+    line-height: 30px;
+}
+
+.dateTimeHourGeneralClass .bootstrap-datetimepicker-widget table td {
+    padding: 0px;
+}
+
+/* CSS - Checkbox */
+.checkboxSelectAllDivClase .checkboxSelectAllInputClase {
+	float: left;
+	margin-top: -3px;
+}
+
+.checkboxSelectAllDivClase .checkboxSelectAllInputClase.checkboxIeComponentGeneralClase {
+	float: left;
+	margin-top: 1px;
+}
+
+.checkboxSelectAllDivClase .checkboxSelectAllLabelClase {
+	float: left;
+	width: 90%;
+	margin-left: 3px;
+}
+
+/* CSS - Boton */
+
+.container.generalContainer .btn-danger:active, .container.generalContainer .btn-danger:focus {
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.btn-impar-three-margin {
+	margin-left: 8%;
+	margin-right: 8%;
+	margin-bottom: 0.2%;
+}
+
+.btn-impar-one-margin {
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-bottom: 0.2%;
+}
+
+.pAdvertencia {
+	color: red;
+	font-size: 10px;
+}
+
+.panel-body-anulacion, .panel-body-consulta-Declaracion, .panel-body-agregar-archivo {
+	margin-bottom: 1px;
+	padding-bottom: 0px;
+	padding-top: 6px;
+}
+
+/* CSS - Tooltip */
+
+.generalContainer .tooltip {
+	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
+	font-size: 10px !important;
+	padding: 4px 6px !important;
+	text-transform: uppercase;
+	max-width: 800px !important;
+}
+
+.generalContainer .tooltip-inner {
+	max-width: 150px;
+	white-space: pre-wrap;
+}
+	
+/**Inicio pagina de alerta**/
+.generalContainerError {
+	margin: 0 auto;
+	margin-top: 14%;
+	color: #a94442;
+	text-align: center;
+}
+
+.generalContainerError img {
+	float: left;
+}
+
+.spaMensajeError {
+	line-height: 3;
+}
+/**Fin pagina de alerta**/
+
+.posicionRight {
+	float: right;
+}
+
+.generalContainer .colorFontGreenTableClass {
+	color: #61c419;
+}
+
+.generalContainer .colorFontTurquesaTableClass {
+	color: #4096ee;
+}
+
+.colorHrDia
+{background-color: #4096ee; height: 5px; margin-right: 0%; width: 100%; margin: 14%;}
+
+.colorHrInactivo
+{background-color: #990000; height: 5px; margin-right: 0%; width: 100%; margin: 14%;}
+
+.colorObserbado
+{background-color: #ff8121; height: 5px; margin-right: 0%; width: 100%; margin: 14%;}
+
+/**texto del importe***/
+.divTextColorImporte
+{color: #ff8121; right: 6px; top: 6px; }
+
+.margin-leyenda{margin-right: 5%;}
+
+input.numberJQGrid{text-align: center; width: 33%;}
+
+.width5 {
+	width: 5px;
+	font-size: 5px;
+}
+
+.width10 {
+	width: 10px;
+	font-size: 10px;
+}
